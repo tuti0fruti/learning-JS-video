@@ -11,7 +11,8 @@ var bool = true;
 null;
 undefined;
 var obj = {};
-
+var obj_1 = {},
+    flag = false;
 console.log(4/0);
 console.log(string / 2);
 console.log(string + " " + string_1);
