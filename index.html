@@ -1,9 +1,117 @@
-<!DOCTYPE html>
-<html>
-<head>
-    
+<!DOCTYPE html> <!-- объявление типа документа -->
+<html lang="ru"> <!-- корневой элемент содержит в себе все что находиться на странице
+атрибут lang позволяет указать язык нашей страницы(можно указывать и локально, для каждого элемента) -->
+<head> <!-- контейнер для всего что мы хотим включить в html документ но не хотим показывать посетителям нашего сайта
+обычно head содержит: 1.заголовок веб страницы title 2. ссылки на css файлы 3. ссылки на иконки 4. другие метаданные
+
+-->
+    <meta name="author" content="Sam Solovyov"> <!-- где name - тип элемента, content - сами метаданные -->
+    <meta charset="utf-8"> <!--устанавлевает кожировку нашего документа-->
+    <link rel="stylesheet" href="style.css">
+    <title>мой сайт</title> <!-- заголовок нашего сайта -->
 </head>
-<body>
+<body> <!-- контейнер для контента который мы хотим показать посетителям сайта -->
+    <h1>Заголовок</h1>  <!-- заголовок, всего можно добавить 6 на страницу, лучше всего использовать их по очереди и не повторять -->
+    <p>Мой любимый <a href="https://www.mozilla.org/" title="Home page mozila" target="_blank">веб сайт</a></p> 
+
+    <a href="https://www.mozilla.org/" title="Home page mozila" target="_blank"> <!-- ссылка на изображении на домашнюю страницу firefox -->
+        <img src="https://raw.githubusercontent.com/mdn/beginner-html-site/gh-pages/images/firefox-icon.png" alt="">
+    </a>
+
+    <p>
+        Хотите написать мне письмо? Используйте мой
+        <a href="#adres_email" title="почта">почтовый адрес</a>
+    </p>
+    
+    <p>     
+        Знак меньше &lt;<br>
+        Знак больше &gt;<br>
+        Двойные кавычки &quot;<br>
+        Одинарные кавычки &apos;<br>
+        Амперсанд &amp;<br>
+    </p>
+    
+    <ul lang="en-US"> <!-- создание неупорядоченого списка -->
+       Shopping list 
+        <li>milk
+            <ol lang="ru">
+                Если нет молока можно взять
+                <li>йогурт</li>
+                <li>сырок</li>
+            </ol>
+        </li>
+        <li>bread</li>
+        <li>eggs</li>
+    </ul>
+    
+    <ol> <!-- создание упорядоченого списка -->
+        Навигатор
+        <li>Двигайтесь прямо</li>
+        <li>Поверните направо
+            <ol>
+                Если сталкунулись с проблемой 
+                <li>Успокойтесь</li>
+                <li>Едьте дальше по маршруту</li>
+            </ol>
+        </li>
+        <li>Двигайтесь прямо</li>
+    </ol>
+
+    <dl> <!-- список описания -->
+        <dt>Солилоквий</dt>
+        <dd>Драматическая речь, в которой персонаж разговаривает сам с собой, 
+            передовая свои ощущения и мысли публике(но не другим персонажам).</dd>
+        <dt>Монолог</dt>
+        <dd>Драматическая речь, в которой персонаж передает свои мысли 
+            публике и некоторым персонажам.</dd>
+         <dt>Ремарка</dt>
+         <dd>В драме: речь персонажа, при которой делается замечание с 
+            юмористическим или драматическим эффектом; чаще всего это чуства, 
+            мысли или предпосылки к чему-либо.</dd>  
+            <dd>В письменности: отметка, примечание (устар.).</dd> 
+    </dl>
+
+    <blockquote cite="https://developer.mozilla.org/ru/docs/Web/HMTL/Element/blockquote">
+        <p><strong><abbr title="Hypertext Markup Language">HTML</abbr>-элемент<code>&lt;blockquote&gt;</code></strong> 
+            (от англ. <em><abbr title="Hypertext Markup Language">HTML</abbr> Block Quotation Element</em>) указывает на то, 
+            что заключенный в нем текст является развернутой цитатой.</p>
+    </blockquote>
+    
+    <p>
+        Элемент цитирования - <code>&lt;q&gt;</code> - 
+        <q cite="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/q">
+            предназначен  для коротких цитат, не требующих прерывания абзаца
+        </q>
+    </p>
+   
+    <p>
+        Здравствуйте и добро пожаловать на мою страницу мотивации! 
+        <a href="http://www.brainyquote.com/quotes/authors/c/confucius.html">
+            <cite>Конфуций</cite>
+        </a> 
+        как-то сказал:
+    </p>
+    
+    <blockquote cite="http://www.brainyquote.com/quotes/authors/c/confucius.html">
+        <p>Не важно, с какой скоростью ты движешься к своей цели, — главное не останавливаться.</p>
+    </blockquote>
+    
+    <p>
+        Мне также нравится концепция позитивного мышления, и я считаю, каждый ощущает
+        <q cite="http://www.affirmationsforpositivethinking.com/index.htm">
+            Необходимость избавления от негативного внутреннего разговора
+        </q>
+        (как сказано в зарубежной статье 
+        <a href="http://www.affirmationsforpositivethinking.com/index.htm">
+        <cite>Affirmations for Positive Thinking</cite>
+        </a>
+        .)
+    </p>
+
+    <p id="adres_email">
+        <a href="mailto:solovyovsemen@yandex.ru;subject=тема;body=текст" 
+        title="отправить письмо?">solovyovsemen@yandex.ru</a>
+    </p>
 
     <script src="script.js"></script>
 </body>

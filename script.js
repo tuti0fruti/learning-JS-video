@@ -27,19 +27,19 @@ let person = {
 }
 
 
-console.log(person.name);
-console.log(person["name"]);
+// console.log(person.name);
+// console.log(person["name"]);
 
-let arr = [ 'fa ' , 'da ' , 'sa'];
+// let arr = [ 'fa ' , 'da ' , 'sa'];
 
-console.log(arr[0]);
+// console.log(arr[0]);
 
 //alert('hello');
 // var answer = confirm('are you here?');
 
 // console.log(answer);
 
-var answer = prompt('are you here?', 'Yes');
+// var answer = prompt('are you here?', 'Yes');
 
-console.log(typeof(arr));
+// console.log(typeof(arr));
 
