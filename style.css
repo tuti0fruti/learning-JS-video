@@ -1,0 +1,67 @@
+html {
+    background-color: #e8ebee;
+}
+body 
+/*Selector - селектор - имя HTML элемента в начале набора правил. Он выбирает элементы для применения стиля можно выбрать несколько, через запятую
+селектор для элемента - p{}
+ID селектор - #my-id{}
+Селектор класса - .my-class
+Селектор атрибута - img[src]
+Селектор псевдокласса - a::after 
+*/{
+    padding: 0px 20px 20px 20px; /*-> Properties - свойства - способы которыми можно стилизовать определенный HTML элемент *(top right bottom left) */
+    margin: 10px;
+
+    font-family: 'Chivo Mono', Courier, monospace;
+    font-size: 15px;
+    color:rgb(14, 6, 1);
+
+    border: 2px solid black;
+
+    /*Declaration - объявление - правило указывающее какие из свойств элемента нужно стилизовать*/
+}
+/*
+Макет CSS имеет блочную модель. Каждый из блоков занимающий пространство страницы имеет следующую модель:
+    padding - пространство вокруг контента
+    border - сплошная линия рядом с padding
+    margin - пространство вокруг внешней стороны элемента
+
+
+*/
+h1 {
+    color: #375e97;
+    font-size: 2em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+    border-bottom: 1px solid #375e97;
+}
+
+main {
+    margin: 20px;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+img{
+    display: block;
+    margin: 0 auto;   
+}
+li{
+    list-style-type: circle;
+}
+
+a:link, a:visited{
+    color:rgb(54, 70, 190)
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+/*при уменьшении экрана значения меняются*/
+@media (max-width: 30em) {
+    body {
+        background-color:bisque;
+        color:rgb(39, 2, 2);
+    }
+}
